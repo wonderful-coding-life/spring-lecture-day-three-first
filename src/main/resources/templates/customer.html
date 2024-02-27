@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Sample</title>
+</head>
+<body>
+
+<!--Messages with parameters-->
+<p th:text="#{customer.contact.long(${name}, ${phone})}">
+    홍길동 고객님의 연락처는 010-1111-1111입니다
+</p>
+
+<!--Key and messages with parameters-->
+<p th:text="#{${contact}(${name}, ${phone})}">
+    홍길동 고객님의 연락처는 010-1111-1111입니다
+</p>
+</body>
+</html>
